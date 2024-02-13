@@ -2,7 +2,7 @@
 # Exercise: Setting Up Your First Express Server
 
 ## Objective
-Create a basic Express server that handles two routes: `/` and `/about`.
+Create a basic Express server that handles two routes: `/` and `/about`. This exercise ranks 1 point worth of difficulty, with an expected work time of an hour.
 
 ## Requirements
 
