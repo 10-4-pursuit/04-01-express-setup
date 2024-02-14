@@ -15,6 +15,10 @@ Create a basic Express server that handles two routes: `/` and `/about`. This ex
 - **Route `/`**: Should send back a response with the text: "Welcome to my first Express server!".
 - **Route `/about`**: Should send back a JSON response containing an object with a name and an age. [Hint](https://expressjs.com/en/api.html#express.json).
 
+### Run the Server
+- A server.js file is provided. The expectation is to import the express app from index.js and have the express app listen from server.js
+- Once you've got the listener set up, you should run `node server.js` to have a copy of your server running
+
 ## End Cases
 - Server runs without errors on port 3000.
 - Navigating to `http://localhost:3000/` displays "Welcome to my first Express server!".
