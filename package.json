@@ -4,7 +4,8 @@
   "description": "## Objective Create a basic Express server that listens on port 3000 and handles two routes: `/` and `/about`.",
   "main": "tests.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
