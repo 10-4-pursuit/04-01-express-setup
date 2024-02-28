@@ -4,13 +4,17 @@
   "description": "## Objective Create a basic Express server that listens on port 3000 and handles two routes: `/` and `/about`.",
   "main": "tests.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node server.js",
+    "dev": "nodemon server"
   },
-  "author": "",
+  "author": "will do",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "express": "^4.18.2",
     "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
     "supertest": "^6.3.4"
   }
 }

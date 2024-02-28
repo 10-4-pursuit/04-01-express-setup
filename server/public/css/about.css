@@ -1,0 +1,30 @@
+html {
+    background: black;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a9/Christine_Darden.jpg");
+    background-size: cover;
+    color: black
+}
+
+/* body {
+    display:grid;
+    min-height: 100%;
+    place-content: center;
+    background-color: #eff4f5;
+} */
+
+h1, p {
+    color: white  
+}
+.card{
+    width: 600px;
+    height: 350px;
+    box-shadow: 10px 10px 15px rgb(192, 183, 183),  -10px -10px 15px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 1);
+    
+}
+
