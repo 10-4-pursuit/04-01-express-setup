@@ -3,29 +3,38 @@ const path = require('path');
 const handlebars = require('express-handlebars');
 const app = express();
 
-// app.get('/', (req, res) => {
-//     res.send('Hello World!');
-//   });
+const jsonData = {  
+    message: "Welcome To My First Express Server!",   
+  };
 
-// Configure Handlebars
-// const hbs = handlebars.create({
-//     extname: '.hbs' // Specify extension for handlebar templates
-//   });
-
-// app.engine('handlebars', hbs.engine);
-// app.set('view engine', 'handlebars');
-// app.set('views', path.join(__dirname, 'views')); // Specify your views directory
-
-//homepage route
-// app.get("/", (req, res) => { 
-//     res.sendFile(path.join(__dirname, '../public', 'index.html'))
-
-// })
+  const jsonObject = {  
+    name: "Christine Darden",
+    age: "81"   
+  };
 
 
+
+  app.get("/raw", (req, res) => {
+    res.setHeader('Content-Type', 'application/json');
+    res.send( {jsonData} );
+  });
+
+  app.get("/rawAbout", (req, res) => {
+    res.setHeader('Content-Type', 'application/json');
+    res.send({jsonObject});
+  });
+  
   // Set static folder
 app.use(express.static(path.join(__dirname, '../public')));
 
-// console.log(path.join(__dirname, 'public'))
+// app.get("/", (req, res) => {
+  
+//     res.json( {jsonData} );
+//   });
+
+
+// app.get('/', (req, res) => {
+//     res.json('Hello World!');
+//   });
 
 module.exports = app
